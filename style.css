@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Rose", cursive;
+  text-align: center;
+}
+img{
+  object-fit: contain;
+}
+
+/* ------------------------------ */
+/* ---------- NAVBAR ------------ */
+/* ------------------------------ */
+.container{
+ width: 100%;
+ min-height:100vh;
+ background:linear-gradient(rgba(6, 4, 33, 0.7), rgba(6, 4, 33, 0.7)),url(./assets/pexels-maxyne-barcel-10402282\ 1.png);
+ background-blend-mode:darken;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+.navbar{
+  display: flex;
+  padding:3rem;
+  padding-top: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.marker{
+  display: none;
+  width: 3rem;
+}
+.marker img{
+width: 100%;
+}
+.list{
+  list-style: none;
+}
+.list-item{
+  width: fit-content;
+  display: inline-block;
+  margin: 0 1rem !important;
+  color: #ffc133;
+  font-size: 1.2rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+.list-item:hover{
+  border: 1px solid white;
+  border-radius: 5%; 
+  padding: 0.2rem 1rem ;
+}
+.button-small,.button-large{
+  background: #ff505f;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.8rem 2rem;
+}
+input{
+display: none;
+}
+
+
+/* ------------------------------ */
+/* ---------- HERO ------------ */
+/* ------------------------------ */
+
+.hero{
+  width: 100%;
+  text-align: center;
+  min-height: 100vh;
+  display:flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+.hero .hero-heading{
+  font-size: 6rem;
+  padding: 0 3rem;
+  font-weight: bolder;
+  text-align: center;
+  color: #ffc133;
+  font-family: roboto;
+
+}
+.button-large{
+  font-size: 1.5rem;
+  margin: 0 auto;
+  margin: 1.5rem;
+  padding: 1rem 4rem;
+  width: fit-content;
+}
+.bottom{
+  display: block;
+  width: 100%;
+  float: right;
+}
+.bottom div{
+  padding: 0 3rem;
+}
+.bottom div img {
+  float: right;
+ position: fixed;
+ bottom: 2rem;
+ right: 2rem;
+}
+@media screen and (max-width:1023px) {
+  .hero .hero-heading{
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width:764px) {
+  .navbar{
+    flex-direction: column;
+    padding: 1rem;
+    background: #455ad92e;
+    backdrop-filter: blur(7px);
+  }
+  
+  .list li:first-child{
+  margin-top: 0;
+
+}
+  .list-item,.order_btn{
+    display: none;
+  }
+  .list{
+    margin-top: 3rem;
+  }
+  .list-item{
+    margin: 1rem auto!important;
+  }
+  .navbar {
+    display: block;
+  }
+  .marker{
+    float: right;
+  }
+  .logo{
+    float:left;
+  }
+  .logo img{
+    width:100%;
+  }
+  .marker,.logo{
+    max-width:7rem ;
+    display: inline-block;
+  }
+  .navbar input:checked ~ div .list-item,  .navbar input:checked ~ .order_btn    {
+    display: block;
+
+  }
+  .hero .hero-heading{
+    font-size: 4rem;
+  }
+  .button-large{
+    font-size: 1rem;
+    padding: 1rem 2rem;
+  }
+  .bottom div img {
+    width: 10rem;
+  }
+}
+@media screen and (max-width:576px) {
+  .hero .hero-heading{
+    font-size: 2.5rem;
+  }
+  .bottom div img {
+    width: 5rem;
+  }
+}
