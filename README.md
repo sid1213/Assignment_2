@@ -1,6 +1,6 @@
 # Assignment_1
 This is my second assignment for ineuron .
-![Uploading Screenshot 2022-08-14 at 10.55.15 AM.png…]()
+<img width="1440" alt="Screenshot 2022-08-14 at 10 57 27 AM" src="https://user-images.githubusercontent.com/84630436/184523853-a81e0ac7-0df1-4bc9-a9eb-b67f43b12a0c.png">
 # used technologies 
 i have used 
 - html
